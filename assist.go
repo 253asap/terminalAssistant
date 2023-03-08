@@ -18,10 +18,10 @@ func main() {
 
 func runCommand(command string, args []string) error {
 	switch command {
-	case "hello":
-		fmt.Println("Hello", args[0])
-	case "GPTepal":
-		commandfuncs.ChatGpt()
+	case "gptBase":
+		commandfuncs.GptBase()
+	case "gptEpal":
+		commandfuncs.GptEpal()
 	default:
 		fmt.Println("Command not valid")
 	}
